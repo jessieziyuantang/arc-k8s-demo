@@ -1,7 +1,7 @@
 
 
 ---
-apiVersion: projectcalico.org/v3
+apiVersion: crd.projectcalico.org/v1
 kind: NetworkPolicy
 metadata:
   name: restricted
@@ -29,7 +29,7 @@ spec:
     - Ingress
     - Egress
 ---
-apiVersion: projectcalico.org/v3
+apiVersion: crd.projectcalico.org/v1
 kind: StagedNetworkPolicy
 metadata:
   name: restricted
@@ -58,7 +58,7 @@ spec:
     - Egress
 ---
 
-apiVersion: projectcalico.org/v3
+apiVersion: crd.projectcalico.org/v1
 kind: NetworkPolicy
 metadata:
   name: trusted
@@ -94,7 +94,7 @@ spec:
     - Ingress
     - Egress
 ---
-apiVersion: projectcalico.org/v3
+apiVersion: crd.projectcalico.org/v1
 kind: StagedNetworkPolicy
 metadata:
   name: trusted
@@ -131,7 +131,7 @@ spec:
     - Egress
 
 ---
-apiVersion: projectcalico.org/v3
+apiVersion: crd.projectcalico.org/v1
 kind: NetworkPolicy
 metadata:
   name: dmz
@@ -160,7 +160,7 @@ spec:
     - Ingress
     - Egress
 ---
-apiVersion: projectcalico.org/v3
+apiVersion: crd.projectcalico.org/v1
 kind: StagedNetworkPolicy
 metadata:
   name: dmz
